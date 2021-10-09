@@ -1,4 +1,4 @@
-require("dotenv-safe").config({ allowEmptyValues: false });
+require("dotenv-safe").config();
 
 const express = require("express");
 
