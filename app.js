@@ -1,12 +1,14 @@
-const express = require('express');
+require("dotenv-safe").config({ allowEmptyValues: false });
 
-const indexRouter = require('./routes/index');
+const express = require("express");
+
+const indexRouter = require("./routes/index");
 
 const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.use('/', indexRouter);
+app.use("/", indexRouter);
 
 module.exports = app;
